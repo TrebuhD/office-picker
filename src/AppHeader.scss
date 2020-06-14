@@ -1,12 +1,19 @@
+@import "variables";
+
 .app-header {
-  margin: 5em;
+  color: $color-white;
+  margin-bottom: 4em;
 
   &__title {
     // break after every word
     word-spacing: 100vw;
-    font-size: 3em;
-    line-height: 1.5em;
+    font-size: 4em;
+    line-height: 1.2em;
     text-align: start;
     font-weight: 500;
+  }
+
+  &__subtitle {
+    text-align: start;
   }
 }

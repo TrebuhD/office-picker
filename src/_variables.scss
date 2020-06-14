@@ -1,9 +1,25 @@
+//
+// FONTS
+//
+
 // system font stack to increase loading speed
-// credits: https://css-tricks.com/snippets/css/system-font-stack/
+// credits: https://css-tricks.com/snippets/css/system-font-stack
 $secondary-font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
-// font pairing via https://fontpair.co/
+// font pairing via https://fontpair.co
 $primary-font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
+
+//
+// COLORS
+// palette via https://coolors.co
+//
+
+$color-dark-ocean: #264653;
+$color-lagoon: #2a9d8f;
+$color-desert-sand: #e9c46a;
+$color-sunset: #f4a261;
+$color-grapefruit: #e76f51;
+$color-white: #ffffff;
