@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Office location picker",
+  "name": "A tool to help Jamie pick a location for his next office",
   "icons": [
     {
       "src": "favicon.ico",

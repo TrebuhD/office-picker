@@ -1,0 +1,12 @@
+.app-header {
+  margin: 5em;
+
+  &__title {
+    // break after every word
+    word-spacing: 100vw;
+    font-size: 3em;
+    line-height: 1.5em;
+    text-align: start;
+    font-weight: 500;
+  }
+}

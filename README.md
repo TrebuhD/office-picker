@@ -1,44 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ASSIGNMENT
+--
 
-## Available Scripts
+Jamie's vacation is about to end. She works at an international company, so she can choose another office to work from: either Amsterdam, Madrid, or Budapest. Help her choose which office to go to – she’d like someplace with good weather or cheap flights (or both).
 
-In the project directory, you can run:
+If you'd like to use an API (it's optional), you could try the AccuWeather API ( developer.accuweather.com ), the Kiwi application ( docs.kiwi.com ), or another of your choosing.
 
-### `yarn start`
+You have full control over how you want to present your data, but keep in mind this is a client-side application and Jamie needs to have enough information to make her choice. Make sure to publish your result on GitHub and provide an online demo. You can pick a framework, and the browser compatibility is up to you. We really value creativity, and we encourage you to create your own requirements while working on this assignment. It would be great if you could finish this within one week.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We recommend that you do not spend more than 4 hours on the assignment, and it is obviously not possible to implement all aspects of a production-ready application in this timeframe. This is why we suggest to focus on delivering a functional solution, while showcasing your strengths within the time indication.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Some of example focus areas are:
 
-### `yarn test`
+• Technical excellence
+• Jaw-dropping UX
+• Extremely secure app
+• Framework guru (Vue, React or other)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+We also encourage you to document your choices and possible improvement areas, in order to give us an insight in your line of thought, and help us evaluate your assignment accordingly.

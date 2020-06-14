@@ -1,0 +1,34 @@
+.deck-card {
+  &__container {
+    position: absolute;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__card {
+    background-color: white;
+    background-size: auto 85%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 45vw;
+    min-height: 40vh;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+      0 10px 10px -10px rgba(50, 50, 73, 0.3);
+  }
+}
+
+.deck {
+  position: relative;
+  display: flex;
+  min-height: calc(40vh + 200px);
+}
+
+.button {
+  height: 200px;
+  width: 200px;
+  align-self: flex-end;
+}
