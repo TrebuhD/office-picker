@@ -8,10 +8,13 @@ import "./App.scss";
 function App() {
   return (
     <main className="app">
+      <div className="app__deco-rect">
+        <div className="app__deco-rect-2" />
+      </div>
       <section className="app__main-content">
         <AppHeader />
         <CardList />
-        <FooterCard />
+        <FooterCard open={false} />
       </section>
     </main>
   );

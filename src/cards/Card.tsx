@@ -43,7 +43,7 @@ function Card({ location, toggleModalOpen }: Props) {
         }}
       />
       <header className="card__header">
-        <span>{location.name}</span>
+        <span className="card__header-title">{location.name}</span>
         <div className="card-content__expand-button">
           <UseAnimations animationKey="maximizeMinimize2s" size={24} />
         </div>

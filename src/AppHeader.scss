@@ -7,13 +7,14 @@
   &__title {
     // break after every word
     word-spacing: 100vw;
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 1.2em;
     text-align: start;
     font-weight: 500;
   }
 
   &__subtitle {
+    font-size: 1.5rem;
     text-align: start;
   }
 }

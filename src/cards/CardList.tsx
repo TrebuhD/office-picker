@@ -32,8 +32,11 @@ function CardList() {
         ))}
       </div>
 
-      <Rodal visible={modalOpen} onClose={() => toggleModalOpen()}>
-        <LocationDetailView location={selectedLocation} />
+      <Rodal visible={modalOpen} onClose={toggleModalOpen}>
+        <LocationDetailView
+          location={selectedLocation}
+          closeModal={toggleModalOpen}
+        />
       </Rodal>
 
       {/* prevent page scrolling when modal is open */}

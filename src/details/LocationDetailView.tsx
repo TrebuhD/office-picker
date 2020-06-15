@@ -4,16 +4,22 @@ import { Location } from "../types/common";
 
 interface Props {
   location?: Location;
+  closeModal: () => void;
 }
 
-function LocationDetailView({ location }: Props) {
+function LocationDetailView({ location, closeModal }: Props) {
   if (!location) {
     return null;
   }
 
   return (
-    <div>
-      <h1>{location.name}</h1>
+    <div
+      onKeyPress={() => {
+        closeModal();
+      }}
+    >
+      <h1>{location.name}≤</h1>
+      <button onClick={closeModal}>close</button>
     </div>
   );
 }

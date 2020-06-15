@@ -1,4 +1,4 @@
-# Office location picker
+# Office location finder
 
 I decided to implement a dating app-style UI to help Jamie pick his next office location.
 

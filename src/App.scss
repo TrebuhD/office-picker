@@ -5,13 +5,38 @@
   overflow-y: scroll;
   background-color: $color-dark-ocean;
   height: 100%;
+  position: relative;
 
   &__main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     padding-top: 2em;
     padding-bottom: 5em;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
+
+    @include lg {
+      width: 50%;
+    }
+  }
+
+  &__deco-rect {
+    position: fixed;
+    width: 150vw;
+    height: 10rem;
+    background-color: $color-lagoon;
+    transform: rotate(45deg) translateX(10%);
+    top: 0;
+  }
+
+  &__deco-rect-2 {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: $color-ocean;
+    border-bottom: 2rem solid $color-grey;
   }
 }

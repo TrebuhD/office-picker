@@ -23,6 +23,11 @@
     font-weight: 500;
   }
 
+  &__header-title {
+    font-family: $secondary-font-family;
+    margin-bottom: 0.8em;
+  }
+
   &__expand-button {
     cursor: pointer;
 
