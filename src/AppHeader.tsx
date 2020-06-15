@@ -9,7 +9,7 @@ function AppHeader() {
       <p className="app-header__subtitle">
         Help Jamie pick his next office location!
       </p>
-      {/*<p className="app-header__subtitle">Browse through the cards</p>*/}
+      {/*<p className="app-header__subtitle">Browse through the locationData</p>*/}
     </header>
   );
 }

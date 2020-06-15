@@ -1,4 +1,6 @@
-export const cards = [
+import { Location } from "../types/common";
+
+export const locationData: Array<Location> = [
   {
     name: "Madrid",
     imageUrl:

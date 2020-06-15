@@ -1,0 +1,12 @@
+@import "./../variables";
+
+.footer-card {
+  position: fixed;
+  width: inherit;
+  min-height: 10rem;
+  bottom: 0;
+  left: 25% ;
+  background-color: $color-sunset;
+  border-radius: 12px;
+  transform: translateY(50%);
+}

@@ -2,7 +2,16 @@
 
 .app {
   text-align: center;
-  background: $color-dark-ocean;
+  overflow-y: scroll;
+  background-color: $color-dark-ocean;
   height: 100%;
-  padding: 2em 25% 5em;
+
+  &__main-content {
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }

@@ -1,40 +1,41 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import ScrollLock from "react-scrolllock";
 import Rodal from "rodal";
 import "rodal/lib/rodal.css";
 
-import { cards } from "./constants";
+import { locationData } from "./constants";
 import CardContent from "./Card";
-import LocationDetailView from "../LocationDetailView";
+import LocationDetailView from "../details/LocationDetailView";
+import { Location } from "../types/common";
 import "./CardList.scss";
 
 function CardList() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState<Location>();
 
-  function toggleModalOpen(locationName: string) {
+  function toggleModalOpen(location?: Location) {
     setModalOpen((state) => !state);
-    setSelectedLocation(locationName);
+    if (location) {
+      setSelectedLocation(location);
+    }
   }
 
   return (
     <>
       <div className="card-list">
-        {cards.map((cardData, i) => {
-          return (
-            <CardContent
-              key={i}
-              locationName={cardData.name}
-              imageUrl={cardData.imageUrl}
-              description={cardData.description}
-              toggleModalOpen={toggleModalOpen}
-            />
-          );
-        })}
+        {locationData.map((locationData, i) => (
+          <CardContent
+            key={i}
+            location={locationData}
+            toggleModalOpen={toggleModalOpen}
+          />
+        ))}
       </div>
-      <Rodal visible={modalOpen} onClose={() => toggleModalOpen("")}>
-        <LocationDetailView />
+
+      <Rodal visible={modalOpen} onClose={() => toggleModalOpen()}>
+        <LocationDetailView location={selectedLocation} />
       </Rodal>
+
       {/* prevent page scrolling when modal is open */}
       <ScrollLock isActive={modalOpen} />
     </>

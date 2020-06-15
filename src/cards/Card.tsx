@@ -2,13 +2,12 @@ import React from "react";
 import { animated, useSpring } from "react-spring";
 import UseAnimations from "react-useanimations";
 
+import { Location } from "../types/common";
 import "./Card.scss";
 
 interface Props {
-  locationName: string;
-  imageUrl: string;
-  description: string;
-  toggleModalOpen: (locationName: string) => void;
+  location: Location;
+  toggleModalOpen: (location: Location) => void;
 }
 
 const normalSpringProps = { xys: [0, 0, 1] };
@@ -24,7 +23,7 @@ const getHoverSpringProps = (x: number, y: number) => ({
 const getCardTransform = (x: number, y: number, s: number) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-function Card({ locationName, imageUrl, description, toggleModalOpen }: Props) {
+function Card({ location, toggleModalOpen }: Props) {
   const [springProps, setSpring] = useSpring(() => normalSpringProps);
 
   return (
@@ -34,22 +33,25 @@ function Card({ locationName, imageUrl, description, toggleModalOpen }: Props) {
         setSpring(getHoverSpringProps(x, y))
       }
       onMouseLeave={() => setSpring(normalSpringProps)}
-      onMouseDown={() => toggleModalOpen(locationName)}
+      onMouseDown={() => toggleModalOpen(location)}
       style={{ transform: springProps.xys.to(getCardTransform) }}
     >
       <div
         className="card__image-wrapper"
         style={{
-          background: `center / cover no-repeat url(${imageUrl})`,
+          background: `center / cover no-repeat url(${location.imageUrl})`,
         }}
       />
       <header className="card__header">
-        <span>{locationName}</span>
+        <span>{location.name}</span>
         <div className="card-content__expand-button">
           <UseAnimations animationKey="maximizeMinimize2s" size={24} />
         </div>
       </header>
-      <span className="card__description">{description}</span>
+      <span className="card__description">{location.description}</span>
+      {/* rate */}
+      <br />
+      <span>not yet rated</span>
     </animated.div>
   );
 }
