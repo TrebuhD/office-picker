@@ -21,6 +21,10 @@ The card can be flipped to reveal a detail view.
 ## TODO
 
 - [✔️] Bootstrap a new project with React (CRA), TypeScript & SCSS
+- [✔️] Create a simple UI using cards
 - [️] Deploy online
 
 ## THINGS TO IMPROVE
+
+- The detail view should navigate to a separate route (e.g `https://location-picker.com/locations/madrid`).
+  Animated route transitions are something I decided not to approach in this challenge.

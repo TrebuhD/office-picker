@@ -1,14 +1,14 @@
 import React from "react";
 
 import AppHeader from "./AppHeader";
-import Deck from "./cards/Deck";
+import CardList from "./cards/CardList";
 import "./App.scss";
 
 function App() {
   return (
     <main className="app">
       <AppHeader />
-      <Deck />
+      <CardList />
     </main>
   );
 }

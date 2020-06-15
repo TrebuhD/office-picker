@@ -3,10 +3,6 @@
 .app {
   text-align: center;
   background: $color-dark-ocean;
-  position: fixed;
-  overflow: hidden;
-  padding-left: 25%;
-  padding-right: 25%;
-  width: 50%;
   height: 100%;
+  padding: 2em 25% 5em;
 }

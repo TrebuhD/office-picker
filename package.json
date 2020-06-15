@@ -15,7 +15,9 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-spring": "^9.0.0-rc.3",
-    "react-use-gesture": "5.0.0"
+    "react-use-gesture": "5.0.0",
+    "react-useanimations": "^1.2.13",
+    "rodal": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
