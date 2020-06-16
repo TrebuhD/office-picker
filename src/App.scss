@@ -1,7 +1,6 @@
 @import "./variables";
 
 .app {
-  text-align: center;
   overflow-y: scroll;
   background-color: $color-dark-ocean;
   height: 100%;
@@ -12,11 +11,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 2em;
-    padding-bottom: 5em;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    height: 100%;
 
     @include sm {
       width: 70%;

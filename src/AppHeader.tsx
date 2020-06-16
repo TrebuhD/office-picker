@@ -6,9 +6,14 @@ function AppHeader() {
   return (
     <header className="app-header">
       <h1 className="app-header__title">Office location finder.</h1>
-      <p className="app-header__subtitle">
-        Help Jamie pick his next office location!
-      </p>
+      <div className="app-header__paragraph-container">
+        <p className="app-header__paragraph">
+          Help Jamie pick his next office location!
+        </p>
+        <p className="app-header__paragraph">
+          Click on a location to learn more about it.
+        </p>
+      </div>
     </header>
   );
 }

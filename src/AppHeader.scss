@@ -13,7 +13,14 @@
     font-weight: 500;
   }
 
-  &__subtitle {
+  &__paragraph-container {
+    padding: 1em;
+    background-color: rgba($color-dark-ocean, 0.2);
+    display: inline-block;
+    border-radius: 8px;
+  }
+
+  &__paragraph {
     font-size: 1.5rem;
     text-align: start;
   }
