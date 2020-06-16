@@ -4,6 +4,7 @@ import UseAnimations from "react-useanimations";
 
 import { Location } from "../types/common";
 import "./Card.scss";
+import CountryFlag from "./CountryFlag";
 
 interface Props {
   location: Location;
@@ -42,16 +43,17 @@ function Card({ location, toggleModalOpen }: Props) {
           background: `center / cover no-repeat url(${location.imageUrl})`,
         }}
       />
-      <header className="card__header">
-        <span className="card__header-title">{location.name}</span>
-        <div className="card-content__expand-button">
-          <UseAnimations animationKey="maximizeMinimize2s" size={24} />
-        </div>
-      </header>
-      <span className="card__description">{location.description}</span>
-      {/* todo: rate */}
-      <br />
-      <span>not yet rated</span>
+      <section className="card__main-content">
+        <header className="card__header">
+          <span className="card__header-title">{location.name}</span>
+          <CountryFlag locationName={location.name} />
+        </header>
+        <span className="card__description">{location.description}</span>
+        {/* todo: rate */}
+        {/*<br />*/}
+        {/*<br />*/}
+        {/*<span>not yet rated</span>*/}
+      </section>
     </animated.div>
   );
 }

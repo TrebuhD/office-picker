@@ -3,47 +3,33 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 2em;
   justify-content: flex-start;
   background-color: $color-white;
   border-radius: 10px;
-  filter: drop-shadow(10px 10px 20px rgba($color-lagoon, 0.6));
+  filter: drop-shadow(10px 10px 20px rgba($color-black, 0.6));
   cursor: pointer;
   margin-bottom: 2em;
 
   @include xl {
     margin-bottom: unset;
-    max-width: 27%;
-
-    &:not(:last-of-type) {
-      //height: 100%;
-    }
-  }
-
-  &--expanded {
+    max-width: 25%;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: start;
+    align-items: baseline;
     font-size: 2em;
     font-weight: 500;
   }
 
-  &__header-title {
-    font-family: $secondary-font-family;
-    margin-bottom: 0.8em;
+  &__main-content {
+    padding: 0.5em 2em 2em;
   }
 
-  &__expand-button {
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
-      transition: transform 200ms;
-    }
+  &__header-title {
+    font-family: $secondary-font-family;
+    margin-bottom: 0.5em;
   }
 
   &__image-wrapper {
