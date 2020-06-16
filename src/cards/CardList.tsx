@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ScrollLock from "react-scrolllock";
-import Rodal from "rodal";
+import Modal from "rodal";
 import "rodal/lib/rodal.css";
 
 import { locationData } from "./constants";
@@ -10,11 +10,15 @@ import { Location } from "../types/common";
 import "./CardList.scss";
 
 function CardList() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState<Location>();
+  // todo: reset state
+  const [modalOpen, setModalOpen] = useState(true);
+  const [selectedLocation, setSelectedLocation] = useState<Location>(
+    locationData[0]
+  );
 
   function toggleModalOpen(location?: Location) {
     setModalOpen((state) => !state);
+
     if (location) {
       setSelectedLocation(location);
     }
@@ -32,12 +36,12 @@ function CardList() {
         ))}
       </div>
 
-      <Rodal visible={modalOpen} onClose={toggleModalOpen}>
+      <Modal visible={modalOpen} onClose={toggleModalOpen}>
         <LocationDetailView
           location={selectedLocation}
           closeModal={toggleModalOpen}
         />
-      </Rodal>
+      </Modal>
 
       {/* prevent page scrolling when modal is open */}
       <ScrollLock isActive={modalOpen} />

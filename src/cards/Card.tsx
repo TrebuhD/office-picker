@@ -49,7 +49,7 @@ function Card({ location, toggleModalOpen }: Props) {
         </div>
       </header>
       <span className="card__description">{location.description}</span>
-      {/* rate */}
+      {/* todo: rate */}
       <br />
       <span>not yet rated</span>
     </animated.div>

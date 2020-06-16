@@ -4,9 +4,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: 30rem;
+
+  @include xl {
+    max-width: unset;
+    flex-direction: row;
+  }
 }
 
 .rodal-mask {

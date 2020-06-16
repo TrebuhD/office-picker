@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Location } from "../types/common";
+import "./LocationDetailView.scss";
 
 interface Props {
   location?: Location;
@@ -13,11 +14,7 @@ function LocationDetailView({ location, closeModal }: Props) {
   }
 
   return (
-    <div
-      onKeyPress={() => {
-        closeModal();
-      }}
-    >
+    <div className="location-detail-view" onKeyPress={() => closeModal()}>
       <h1>{location.name}≤</h1>
       <button onClick={closeModal}>close</button>
     </div>
