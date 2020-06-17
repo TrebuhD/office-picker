@@ -11,7 +11,7 @@ function AppHeader() {
           Help Jamie pick his next office location!
         </p>
         <p className="app-header__paragraph">
-          Click on a location to learn more about it.
+          Click on a location card to learn more about it.
         </p>
       </div>
     </header>

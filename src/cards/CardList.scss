@@ -6,7 +6,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @include lg {
   max-width: 30rem;
+  }
 
   @include xl {
     max-width: unset;
