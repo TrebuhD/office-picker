@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4em;
 
   @include lg {
   max-width: 30rem;

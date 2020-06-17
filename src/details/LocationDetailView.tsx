@@ -17,7 +17,6 @@ function LocationDetailView({ location, closeModal }: Props) {
   return (
     <div className="location-detail-view" onKeyPress={() => closeModal()}>
       <DetailViewHeader location={location} />
-      {/*<button onClick={closeModal}>close</button>*/}
     </div>
   );
 }
