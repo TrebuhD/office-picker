@@ -36,10 +36,10 @@ function CardList() {
         ))}
       </div>
 
-      <Modal visible={modalOpen} onClose={toggleModalOpen}>
+      <Modal visible={modalOpen} onClose={() => toggleModalOpen()}>
         <LocationDetailView
           location={selectedLocation}
-          closeModal={toggleModalOpen}
+          closeModal={() => toggleModalOpen()}
         />
       </Modal>
 

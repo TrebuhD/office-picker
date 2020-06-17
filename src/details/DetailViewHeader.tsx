@@ -7,6 +7,10 @@ interface Props {
 }
 
 function DetailViewHeader({ location }: Props) {
+  if (!location) {
+    return null;
+  }
+
   return (
     <header className="location-detail-view__image-header">
       <div
