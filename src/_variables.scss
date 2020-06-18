@@ -20,11 +20,9 @@ $primary-font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI",
 $color-dark-ocean: #142850;
 $color-ocean: #27496d;
 $color-lagoon: #00909e;
-//$color-desert-sand: #e9c46a;
-//$color-sunset: #f4a261;
-//$color-grapefruit: #e76f51;
 $color-white: #ffffff;
 $color-grey: #dae1e7;
+$color-grey-darker: darken($color-grey, 10);
 $color-black: #000000;
 
 //

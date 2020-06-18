@@ -42,9 +42,12 @@
 
   &__section {
     margin-left: 1em;
-    text-transform: uppercase;
+    margin-right: 1em;
+    flex: 1;
   }
 
   &__section-header {
+    font-size: 1.3em;
+    text-transform: uppercase;
   }
 }

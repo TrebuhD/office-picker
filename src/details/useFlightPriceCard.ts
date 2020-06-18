@@ -20,7 +20,7 @@ function useFlightPriceCard({ location, destination }: Props) {
 
   useEffect(
     function getFlights() {
-      fetchFlightData();
+      fetchFlightData({});
     },
     [location, destination, fetchFlightData]
   );

@@ -4,12 +4,16 @@ The user is presented with cards representing suggested locations.
 
 ## Bullet points
 
-- Simple React App using TypeScript, react-spring and axios.
+- Simple React App using TypeScript, scss, react-spring, and axios.
 - Uses modern functional React with component logic extracted into custom hooks.
+- Network layer is handled with `useAxios` hooks.
+- Idiomatic SCSS using BEM, variables and mixins for media queries
 
-1. Cheap flights:
+There are two main sources of information:
 
-- Compare flight cost from Amsterdam/Madrid/Budapest to 3 places, e.g London, Paris, New York.
+1. Travel cost:
+
+- The flight cost from Amsterdam/Madrid/Budapest to 3 destinations, e.g London, Paris, New York.
 
 2. Weather:
 

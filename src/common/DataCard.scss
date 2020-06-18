@@ -1,0 +1,51 @@
+@import "../variables";
+
+.data-card {
+  position: relative;
+  min-height: 4em;
+  background-color: $color-grey-darker;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1em auto;
+  box-shadow: 2px 2px 2px rgba($color-dark-ocean, 0.4);
+
+  &__icon-wrapper {
+    padding: 1em;
+
+    > svg {
+      width: 3em;
+      fill: $color-dark-ocean;
+    }
+
+    &--secondary {
+      position: absolute;
+      padding: 0.5em 1em 0.5em 0.5em;
+      bottom: 0;
+      right: 0;
+
+      > svg {
+        width: 2em;
+      }
+    }
+  }
+
+  &__main-data-container {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__label {
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    color: $color-ocean;
+  }
+
+  &__value {
+    font-weight: 400;
+    font-size: 2em;
+  }
+}
