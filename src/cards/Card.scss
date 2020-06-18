@@ -9,6 +9,7 @@
   filter: drop-shadow(10px 10px 20px rgba($color-black, 0.6));
   cursor: pointer;
   margin-bottom: 2em;
+  color: $color-dark-ocean;
 
   @include xl {
     margin-bottom: unset;

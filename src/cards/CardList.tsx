@@ -3,7 +3,7 @@ import ScrollLock from "react-scrolllock";
 import Modal from "rodal";
 import "rodal/lib/rodal.css";
 
-import { locationData } from "./constants";
+import { locationData } from "../constants";
 import CardContent from "./Card";
 import LocationDetailView from "../details/LocationDetailView";
 import { Location } from "../types/common";
@@ -37,10 +37,12 @@ function CardList() {
       </div>
 
       <Modal visible={modalOpen} onClose={() => toggleModalOpen()}>
-        <LocationDetailView
-          location={selectedLocation}
-          closeModal={() => toggleModalOpen()}
-        />
+        {selectedLocation && (
+          <LocationDetailView
+            location={selectedLocation}
+            closeModal={() => toggleModalOpen()}
+          />
+        )}
       </Modal>
 
       {/* prevent page scrolling when modal is open */}

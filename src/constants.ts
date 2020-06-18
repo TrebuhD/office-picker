@@ -1,4 +1,4 @@
-import { FlightDestination, Location } from "../types/common";
+import { FlightDestination, Location } from "./types/common";
 
 export enum LocationName {
   MADRID = "Madrid",

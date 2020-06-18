@@ -6,6 +6,7 @@
   flex: 1;
   height: 100%;
   width: 100%;
+  color: $color-dark-ocean;
 
   &__image-header {
     position: relative;
@@ -37,5 +38,13 @@
     font-size: 3.5rem;
     font-weight: 500;
     color: $color-grey;
+  }
+
+  &__section {
+    margin-left: 1em;
+    text-transform: uppercase;
+  }
+
+  &__section-header {
   }
 }

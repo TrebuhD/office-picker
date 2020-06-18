@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LocationName } from "./constants";
+import { LocationName } from "../constants";
 import { ReactComponent as SpainFlag } from "../assets/flag_es.svg";
 import { ReactComponent as NetherlandsFlag } from "../assets/flag_nl.svg";
 import { ReactComponent as HungaryFlag } from "../assets/flag_hg.svg";
