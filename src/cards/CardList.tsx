@@ -36,7 +36,7 @@ function CardList() {
         ))}
       </div>
 
-      <Modal visible={modalOpen} onClose={() => toggleModalOpen()}>
+      <Modal visible={modalOpen} onClose={() => toggleModalOpen()} width={320}>
         {selectedLocation && (
           <LocationDetailView
             location={selectedLocation}

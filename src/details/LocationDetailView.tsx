@@ -32,7 +32,11 @@ function LocationDetailView({ location, closeModal }: Props) {
       <DetailViewHeader location={location} />
       <DetailViewSection name="travel">
         {flightDestinationData.map((destination) => (
-          <FlightPriceCard location={location} destination={destination} />
+          <FlightPriceCard
+            key={destination.name}
+            location={location}
+            destination={destination}
+          />
         ))}
       </DetailViewSection>
     </div>

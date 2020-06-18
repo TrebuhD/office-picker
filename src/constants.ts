@@ -20,6 +20,8 @@ export const locationData: Array<Location> = [
       "https://cdn.indicium.nu/source/lonely-planet/inspiratie/2019_april/madrid.jpg?w=768&h=500&sharp=2&fit=crop",
     description:
       "Madrid, the capital of Spain, is a cosmopolitan city that combines the most modern infrastructures and the status as an economic, financial, administrative and service centre, with a large cultural and artistic heritage, a legacy of centuries of exciting history.",
+    travelDescription:
+      "Madrid Airport opened in 1928, and has grown to be one of Europe's most important aviation centres. Located within the city limits of Madrid, it is just 9 km (6 mi) from the city's financial district and 13 km (8 mi) northeast of the Puerta del Sol or Plaza Mayor de Madrid, Madrid's historic centre.",
   },
   {
     name: LocationName.AMSTERDAM,
@@ -30,6 +32,7 @@ export const locationData: Array<Location> = [
       "https://www.holland.com/upload_mm/8/2/7/68467_fullimage_amsterdam_canal2_1360x.jpg",
     description:
       "Amsterdam is an unusual city in that it has all the advantages of a big city – culture, history, food, entertainment, good transport – with relatively few of the disadvantages: it is physically small, beautiful, relatively quiet, and largely thanks to the canals, has relatively little traffic.",
+    travelDescription: "",
   },
   {
     name: LocationName.BUDAPEST,
@@ -40,6 +43,7 @@ export const locationData: Array<Location> = [
       "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa42066f2-15c8-11e9-8239-c0a124428b01.jpg?crop=5832%2C3280%2C0%2C304&resize=1180",
     description:
       "With a unique, youthful atmosphere, a world-class classical music scene as well as a pulsating night life increasingly appreciated among European youth and, last but not least, an exceptionally rich offering of natural thermal baths, Budapest is one of Europe's most delightful and enjoyable cities.",
+    travelDescription: "",
   },
 ];
 

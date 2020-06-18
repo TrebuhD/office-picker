@@ -31,19 +31,21 @@ function DestinationIcon({ destination }: { destination: FlightDestination }) {
 function FlightPriceCard({ location, destination }: Props) {
   const {
     fetchFlightData,
-    flightData,
     flightDataError,
     flightDataLoading,
+    flight,
   } = useFlightPriceCard({ location, destination });
-
-  console.dir({ flightData });
 
   return (
     <DataCard
-      label={`Cheapest flight to ${destination.name}`}
-      value={"€ 1238"}
+      label={`Cheapest flight to ${destination.name}${
+        flight ? ` (${flight.distance}km)` : ""
+      }:`}
+      value={flight ? `€ ${flight.price}` : undefined}
+      link={flight ? flight.deep_link : undefined}
       icon={<DestinationIcon destination={destination} />}
       secondaryIcon={<PlaneIcon />}
+      loading={flightDataLoading}
     />
   );
 

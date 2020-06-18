@@ -12,21 +12,40 @@ interface Props {
   destination: FlightDestination;
 }
 
+interface Flight {
+  price: number;
+  deep_link: string;
+  distance: number;
+}
+
+function getCheapestFlight(data: Array<Flight>) {
+  const sortedData = data.sort((a, b) => a.price - b.price);
+  console.log(sortedData[0]);
+  return sortedData[0];
+}
+
 function useFlightPriceCard({ location, destination }: Props) {
-  const [
-    { data, loading, error },
-    fetchFlightData,
-  ] = useAxios(flightsApiEndpoint, { manual: true });
+  const [{ data: response, loading, error }, fetchFlightData] = useAxios<{
+    data: Array<Flight>;
+  }>(flightsApiEndpoint, { manual: true });
 
   useEffect(
     function getFlights() {
-      fetchFlightData({});
+      fetchFlightData({
+        params: {
+          fly_from: location.airportCode,
+          fly_to: destination.airportCode,
+          partner: "picky",
+          v: 3,
+          limit: 10,
+        },
+      });
     },
     [location, destination, fetchFlightData]
   );
 
   return {
-    flightData: data,
+    flight: response ? getCheapestFlight(response.data) : null,
     flightDataLoading: loading,
     flightDataError: error,
     fetchFlightData,

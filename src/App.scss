@@ -60,12 +60,16 @@
 
   .rodal-dialog {
     overflow-y: scroll;
-    min-height: 60vh;
-    min-width: 30rem;
     padding: 0;
     display: flex;
     box-shadow: 3px 3px 10px rgba($color-black, 0.4);
     background-color: $color-grey;
     border-radius: 8px;
+    min-height: 90vh;
+
+    @include sm {
+      min-height: 70vh;
+      min-width: 30rem;
+    }
   }
 }
