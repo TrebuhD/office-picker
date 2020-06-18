@@ -1,12 +1,11 @@
 # Office location finder
 
-I decided to implement a dating app-style UI to help Jamie pick his next office location.
-
 The user is presented with cards representing suggested locations.
 
-The card can be flipped to reveal a detail view.
+## Bullet points
 
-##
+- Simple React App using TypeScript, react-spring and axios.
+- Uses modern functional React with component logic extracted into custom hooks.
 
 1. Cheap flights:
 
@@ -26,5 +25,8 @@ The card can be flipped to reveal a detail view.
 
 ## THINGS TO IMPROVE
 
-- The detail view should navigate to a separate route (e.g `https://location-picker.com/locations/madrid`).
-  Animated route transitions are something I decided not to approach in this challenge.
+- Type definitions for some external dependencies (rodal, useAnimation) should be improved.
+- Caching can be enabled without extra effort by enabling the service worker. I decided not to do this for this assignment.
+- More data could be added to help Jamie make his decision.
+- If the app was more complicated, a state management library like Redux or Recoil.js could be used.
+- Unit tests can be added.
