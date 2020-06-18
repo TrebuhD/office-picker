@@ -10,13 +10,14 @@
   align-items: center;
   margin: 1em auto;
   box-shadow: 2px 2px 2px rgba($color-dark-ocean, 0.4);
+  color: $color-dark-ocean;
 
   &__icon-wrapper {
     padding: 1em;
 
     > svg {
       width: 3em;
-      fill: $color-dark-ocean;
+      fill: $color-ocean;
     }
 
     &--secondary {
@@ -47,5 +48,7 @@
   &__value {
     font-weight: 400;
     font-size: 2em;
+    display: inline-flex;
+    align-items: center;
   }
 }

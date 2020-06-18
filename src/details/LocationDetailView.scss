@@ -1,11 +1,6 @@
 @import "./../variables";
 
 .location-detail-view {
-  border-radius: 8px;
-  background-color: $color-grey;
-  flex: 1;
-  height: 100%;
-  width: 100%;
   color: $color-dark-ocean;
 
   &__image-header {
