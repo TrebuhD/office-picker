@@ -7,7 +7,7 @@ function Footer() {
     <footer className="app-footer">
       <div className="app-footer__wrapper">
         <p className="app-footer__par app-footer__par--main">
-          Made with ♥ by{" "}
+          Made by{" "}
           <strong>
             <a
               href="http://github.com/TrebuhD"

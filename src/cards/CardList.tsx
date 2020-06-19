@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ScrollLock from "react-scrolllock";
 import Modal from "rodal";
 import "rodal/lib/rodal.css";
 
@@ -44,9 +43,6 @@ function CardList() {
           />
         )}
       </Modal>
-
-      {/* prevent page scrolling when modal is open */}
-      <ScrollLock isActive={modalOpen} />
     </>
   );
 }
