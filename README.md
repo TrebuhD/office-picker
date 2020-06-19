@@ -8,7 +8,7 @@ The user is presented with cards representing suggested locations.
 - Uses modern functional React with component logic extracted into custom hooks.
 - Network layer is handled with `useAxios` hooks.
 - Idiomatic and responsive styles using BEM, scss variables and mixins for media queries.
-- Secure: the API key for open is stored
+- Secure: the app is deployed using now.sh and the API key for OpenWeatherMap is stored in remote environment variables
 
 There are two main sources of information:
 
@@ -22,7 +22,12 @@ There are two main sources of information:
 - Number of sunny days
 - Avg. hours of sunshine
 
-## THINGS TO IMPROVE
+## Running the app
+1. `yarn install`
+2. `yarn start`
+
+
+## THINGS TO IMPROVE (if I had more time)
 
 - Type definitions for some external dependencies (rodal, useAnimation) should be improved.
 - Caching can be enabled without extra effort by enabling the service worker. I decided not to do this for this assignment.
