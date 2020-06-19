@@ -19,7 +19,11 @@
   }
 
   &__icon-wrapper {
-    padding: 1em;
+    padding: 1em 0 1em 1em;
+
+    @include md {
+      padding: 1em 1em 1em 2em;
+    }
 
     > svg {
       width: 3em;
@@ -61,7 +65,9 @@
     margin-right: 1em;
     transition: color 200ms;
     width: fit-content;
+  }
 
+  a {
     &:hover,
     &:visited:hover {
       color: $color-lagoon;

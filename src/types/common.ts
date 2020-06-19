@@ -9,4 +9,6 @@ export interface Location extends FlightDestination {
   description: string;
   travelDescription: string;
   climateDescription: string;
+  latitude: number;
+  longitude: number;
 }

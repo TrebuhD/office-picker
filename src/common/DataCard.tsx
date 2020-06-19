@@ -8,7 +8,7 @@ interface Props {
   icon?: React.ReactNode;
   secondaryIcon?: React.ReactNode;
   value?: string;
-  loading: boolean;
+  loading?: boolean;
   // link to flight
   link?: string;
 }
@@ -23,14 +23,18 @@ function DataCard({ label, icon, value, secondaryIcon, loading, link }: Props) {
           <i className="data-card__icon-wrapper">{icon}</i>
           <div className="data-card__main-data-container">
             <label className="data-card__label">{label}</label>
-            <a
-              href={link}
-              className="data-card__value"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {value}
-            </a>
+            {link ? (
+              <a
+                href={link}
+                className="data-card__value"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {value}
+              </a>
+            ) : (
+              <span className="data-card__value">{value}</span>
+            )}
             {secondaryIcon && (
               <i className="data-card__icon-wrapper data-card__icon-wrapper--secondary">
                 {secondaryIcon}

@@ -28,7 +28,7 @@ function useFlightPriceCard({ location, destination }: Props) {
   }>(flightsApiEndpoint, { manual: true });
 
   useEffect(
-    function getFlights() {
+    function makeRequest() {
       fetchFlightData({
         params: {
           fly_from: location.airportCode,
