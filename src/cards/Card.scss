@@ -6,6 +6,7 @@
   justify-content: flex-start;
   background-color: $color-white;
   border-radius: 10px;
+  min-height: 20em;
   filter: drop-shadow(10px 10px 20px rgba($color-black, 0.6));
   cursor: pointer;
   margin-bottom: 2em;
@@ -14,7 +15,7 @@
   @include xl {
     margin-bottom: unset;
     height: 100%;
-    width: 30%;
+    width: 29%;
     max-width: 22rem;
   }
 

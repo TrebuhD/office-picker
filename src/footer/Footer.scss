@@ -2,18 +2,23 @@
 
 .app-footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 4em;
+  display: block;
+  padding-bottom: 4em;
+  padding-top: 3em;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   a {
-    color: $color-lagoon;
+    color: $color-lagoon-lighter;
     text-decoration: none;
     transition: color 200ms;
 
     &:hover {
-      color: lighten($color-lagoon, 10);
+      color: lighten($color-lagoon-lighter, 10);
     }
   }
 

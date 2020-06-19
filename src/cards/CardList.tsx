@@ -25,13 +25,15 @@ function CardList() {
   return (
     <>
       <div className="card-list">
-        {locationData.map((locationData, i) => (
-          <CardContent
-            key={i}
-            location={locationData}
-            toggleModalOpen={toggleModalOpen}
-          />
-        ))}
+        <div className="card-list__wrapper">
+          {locationData.map((locationData, i) => (
+            <CardContent
+              key={i}
+              location={locationData}
+              toggleModalOpen={toggleModalOpen}
+            />
+          ))}
+        </div>
       </div>
 
       <Modal visible={modalOpen} onClose={() => toggleModalOpen()} width={320}>
