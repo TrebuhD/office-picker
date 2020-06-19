@@ -26,6 +26,9 @@ export const locationData: Array<Location> = [
       "Madrid will surprise you with its intense, enveloping blue sky. With a dry climate and little rainfall, the city has hot summers and cold winters. No matter what time of the year you choose to come, you’re very likely to see with your own eyes the deep blue sky Velázquez loved to paint.",
     latitude: 40.4168,
     longitude: 3.7038,
+    avgAnnualTemp: 13.7,
+    avgRainfall: 450,
+    avgSunshineHours: 2769,
   },
   {
     name: LocationName.AMSTERDAM,
@@ -43,6 +46,9 @@ export const locationData: Array<Location> = [
       "The wind blows frequently, and can be intense, especially from November to March.",
     latitude: 52.3667,
     longitude: 4.8945,
+    avgAnnualTemp: 9.2,
+    avgRainfall: 838.2,
+    avgSunshineHours: 1662,
   },
   {
     name: LocationName.BUDAPEST,
@@ -59,6 +65,9 @@ export const locationData: Array<Location> = [
       "Budapest, Hungary is marked by a mild and wet continental-climate with sunny summer and cold winter. In all four seasons, the weather is not easily predictable.",
     latitude: 47.4979,
     longitude: 19.0402,
+    avgAnnualTemp: 11,
+    avgRainfall: 564,
+    avgSunshineHours: 1928,
   },
 ];
 

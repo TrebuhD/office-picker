@@ -11,4 +11,7 @@ export interface Location extends FlightDestination {
   climateDescription: string;
   latitude: number;
   longitude: number;
+  avgAnnualTemp: number;
+  avgRainfall: number;
+  avgSunshineHours: number;
 }

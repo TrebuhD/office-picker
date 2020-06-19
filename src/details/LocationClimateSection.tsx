@@ -8,6 +8,9 @@ import { ReactComponent as TempIcon } from "../assets/temp.svg";
 import { ReactComponent as HumidityIcon } from "../assets/humidity.svg";
 import { ReactComponent as PressureIcon } from "../assets/pressure.svg";
 import { ReactComponent as UviIcon } from "../assets/uvi.svg";
+import { ReactComponent as WeatherIcon } from "../assets/weather.svg";
+import { ReactComponent as SunIcon } from "../assets/sun.svg";
+import { ReactComponent as RainIcon } from "../assets/rain.svg";
 
 interface Props {
   location: Location;
@@ -16,37 +19,54 @@ interface Props {
 function LocationClimateSection({ location }: Props) {
   const { loading, climateData } = useLocationClimateSection({ location });
 
-  console.log({ climateData });
-
   return (
     <DetailViewSection name="climate" description={location.climateDescription}>
       <DataCard
-        label={"Temperature"}
-        value={climateData ? `${climateData.temp} °C` : undefined}
-        loading={loading}
+        label={"Average annual temperature"}
+        value={`${location.avgAnnualTemp} °C`}
         icon={<TempIcon />}
+        secondaryIcon={<WeatherIcon />}
       />
       <DataCard
-        label={"Humidity"}
+        label={"Average annual sunshine"}
+        value={`${location.avgSunshineHours} hours`}
+        icon={<SunIcon />}
+        secondaryIcon={<WeatherIcon />}
+      />
+      <DataCard
+        label={"Average annual rainfall"}
+        value={`${location.avgRainfall} mm`}
+        icon={<RainIcon />}
+        secondaryIcon={<WeatherIcon />}
+      />
+      <DataCard
+        label={"Current Humidity"}
         value={climateData ? `${climateData.humidity} %` : undefined}
         loading={loading}
         icon={<HumidityIcon />}
+        secondaryIcon={<WeatherIcon />}
       />
       <DataCard
-        label={"Air pressure"}
+        label={"Current Air pressure"}
         value={climateData ? `${climateData.pressure} hPa` : undefined}
         loading={loading}
         icon={<PressureIcon />}
+        secondaryIcon={<WeatherIcon />}
       />
       <DataCard
-        label={"UV Index"}
+        label={"Current UV Index"}
         value={climateData ? `${climateData.uvi}` : undefined}
         loading={loading}
         icon={<UviIcon />}
+        secondaryIcon={<WeatherIcon />}
       />
-      {/* TODO: Add avg annual sunshine hours card */}
-      {/* TODO: Add avg annual temp card */}
-      {/* TODO: Add avg rainfall days card */}
+      <DataCard
+        label={"Current Temperature"}
+        value={climateData ? `${climateData.temp} °C` : undefined}
+        loading={loading}
+        icon={<TempIcon />}
+        secondaryIcon={<WeatherIcon />}
+      />
     </DetailViewSection>
   );
 }
