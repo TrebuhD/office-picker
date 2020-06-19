@@ -1,6 +1,7 @@
 # Office location finder
 
-The user is presented with cards representing suggested locations.
+The user is presented with cards representing suggested office locations.
+When a card is clicked, a modal opens revealing more data about the location.
 
 ## About the app
 
@@ -10,6 +11,7 @@ The user is presented with cards representing suggested locations.
 - Secure: the app is deployed using now.sh and the API key for OpenWeatherMap is stored in an encrypted remote store using environment variables
 - Idiomatic and responsive styles using BEM, scss variables and mixins for media queries.
 - Automatic code formatting using prettier and a pre-commit git hook.
+- Automatic deployments via GitHub integration with Vercel.
 
 There are two main sources of information:
 

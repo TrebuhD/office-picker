@@ -6,10 +6,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 
   @include lg {
-  max-width: 30rem;
+    max-width: 30rem;
   }
 
   @include xl {

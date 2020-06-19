@@ -1,8 +1,8 @@
 import React from "react";
+import Footer from "./footer/Footer";
 
 import AppHeader from "./AppHeader";
 import CardList from "./cards/CardList";
-import FooterCard from "./footer-card/FooterCard";
 import { ReactComponent as PersonIcon } from "./assets/people.svg";
 import "./App.scss";
 
@@ -16,7 +16,7 @@ function App() {
       <section className="app__main-content">
         <AppHeader />
         <CardList />
-        <FooterCard open={false} />
+        <Footer />
       </section>
     </main>
   );

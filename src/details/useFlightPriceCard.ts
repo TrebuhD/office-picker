@@ -45,7 +45,9 @@ function useFlightPriceCard({ location, destination }: Props) {
   useEffect(
     function handleFetchError() {
       // todo: improve error handling
-      console.log("error fetching data from flight API: ", error);
+      if (error) {
+        console.log("error fetching data from flight API: ", error);
+      }
     },
     [error]
   );

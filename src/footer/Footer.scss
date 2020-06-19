@@ -1,0 +1,31 @@
+@import "../variables";
+
+.app-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+
+  a {
+    color: $color-lagoon;
+    text-decoration: none;
+    transition: color 200ms;
+
+    &:hover {
+      color: lighten($color-lagoon, 10);
+    }
+  }
+
+  &__par {
+    color: $color-grey;
+    font-size: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    &--main {
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+  }
+}

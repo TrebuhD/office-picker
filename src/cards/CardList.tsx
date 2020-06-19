@@ -11,10 +11,8 @@ import "./CardList.scss";
 
 function CardList() {
   // todo: reset state
-  const [modalOpen, setModalOpen] = useState(true);
-  const [selectedLocation, setSelectedLocation] = useState<Location>(
-    locationData[0]
-  );
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState<Location>();
 
   function toggleModalOpen(location?: Location) {
     setModalOpen((state) => !state);
