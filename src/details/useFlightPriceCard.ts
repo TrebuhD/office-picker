@@ -3,8 +3,6 @@ import { useEffect } from "react";
 
 import { FlightDestination, Location } from "../types/common";
 
-// https://api.skypicker.com/flights?flyFrom=PRG&to=LGW&dateFrom=18/11/2020&dateTo=12/12/2020&partner=picky&v=3
-
 const flightsApiEndpoint = "https://api.skypicker.com/flights";
 
 interface Props {
@@ -15,12 +13,12 @@ interface Props {
 interface Flight {
   price: number;
   deep_link: string;
+  fly_duration: string;
   distance: number;
 }
 
 function getCheapestFlight(data: Array<Flight>) {
   const sortedData = data.sort((a, b) => a.price - b.price);
-  console.log(sortedData[0]);
   return sortedData[0];
 }
 
@@ -44,11 +42,18 @@ function useFlightPriceCard({ location, destination }: Props) {
     [location, destination, fetchFlightData]
   );
 
+  useEffect(
+    function handleFetchError() {
+      // todo: improve error handling
+      console.log("error fetching data from flight API: ", error);
+    },
+    [error]
+  );
+
   return {
     flight: response ? getCheapestFlight(response.data) : null,
     flightDataLoading: loading,
     flightDataError: error,
-    fetchFlightData,
   };
 }
 

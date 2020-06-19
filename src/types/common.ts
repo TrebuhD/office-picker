@@ -8,4 +8,5 @@ export interface Location extends FlightDestination {
   altImageUrl: string;
   description: string;
   travelDescription: string;
+  climateDescription: string;
 }

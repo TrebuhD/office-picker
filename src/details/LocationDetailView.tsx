@@ -5,32 +5,19 @@ import { Location } from "../types/common";
 import DetailViewHeader from "./DetailViewHeader";
 import "./LocationDetailView.scss";
 import FlightPriceCard from "./FlightPriceCard";
+import DetailViewSection from "./DetailViewSection";
+import LocationClimateSection from "./LocationClimateSection";
 
 interface Props {
   location: Location;
   closeModal: () => void;
 }
 
-function DetailViewSection({
-  name,
-  children,
-}: {
-  name: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section className="location-detail-view__section">
-      <h3 className="location-detail-view__section-header">{name}</h3>
-      {children}
-    </section>
-  );
-}
-
 function LocationDetailView({ location, closeModal }: Props) {
   return (
     <div className="location-detail-view" onKeyPress={() => closeModal()}>
       <DetailViewHeader location={location} />
-      <DetailViewSection name="travel">
+      <DetailViewSection name="travel" description={location.travelDescription}>
         {flightDestinationData.map((destination) => (
           <FlightPriceCard
             key={destination.name}
@@ -38,7 +25,9 @@ function LocationDetailView({ location, closeModal }: Props) {
             destination={destination}
           />
         ))}
+        {/* TODO: add public transport ticket price */}
       </DetailViewSection>
+      <LocationClimateSection location={location} />
     </div>
   );
 }

@@ -40,9 +40,12 @@
     margin-left: 1em;
     margin-right: 1em;
     flex: 1;
+    position: relative;
+    min-height: 10em;
   }
 
   &__section-header {
+    margin-top: 2em;
     font-size: 1.3em;
     text-transform: uppercase;
   }

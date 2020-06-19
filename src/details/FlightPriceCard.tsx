@@ -29,12 +29,14 @@ function DestinationIcon({ destination }: { destination: FlightDestination }) {
 }
 
 function FlightPriceCard({ location, destination }: Props) {
-  const {
-    fetchFlightData,
-    flightDataError,
-    flightDataLoading,
-    flight,
-  } = useFlightPriceCard({ location, destination });
+  const { flightDataLoading, flightDataError, flight } = useFlightPriceCard({
+    location,
+    destination,
+  });
+
+  if (flightDataError) {
+    return <div>Error fetching data from the flight API!</div>;
+  }
 
   return (
     <DataCard

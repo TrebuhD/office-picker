@@ -1,18 +1,31 @@
-## ASSIGNMENT
+# Office location finder
 
-Jamie's vacation is about to end. She works at an international company, so she can choose another office to work from: either Amsterdam, Madrid, or Budapest. Help her choose which office to go to – she’d like someplace with good weather or cheap flights (or both).
+The user is presented with cards representing suggested locations.
 
-If you'd like to use an API (it's optional), you could try the AccuWeather API ( developer.accuweather.com ), the Kiwi application ( docs.kiwi.com ), or another of your choosing.
+## About the app
 
-You have full control over how you want to present your data, but keep in mind this is a client-side application and Jamie needs to have enough information to make her choice. Make sure to publish your result on GitHub and provide an online demo. You can pick a framework, and the browser compatibility is up to you. We really value creativity, and we encourage you to create your own requirements while working on this assignment. It would be great if you could finish this within one week.
+- Simple React App using TypeScript, scss, react-spring, and axios.
+- Uses modern functional React with component logic extracted into custom hooks.
+- Network layer is handled with `useAxios` hooks.
+- Idiomatic and responsive styles using BEM, scss variables and mixins for media queries.
+- Secure: the API key for open is stored
 
-We recommend that you do not spend more than 4 hours on the assignment, and it is obviously not possible to implement all aspects of a production-ready application in this timeframe. This is why we suggest to focus on delivering a functional solution, while showcasing your strengths within the time indication.
+There are two main sources of information:
 
-Some of example focus areas are:
+1. Travel cost (Using the skypicker API):
 
-• Technical excellence
-• Jaw-dropping UX
-• Extremely secure app
-• Framework guru (Vue, React or other)
+- The flight cost from Amsterdam/Madrid/Budapest to 3 destinations, e.g London, Paris, New York.
 
-We also encourage you to document your choices and possible improvement areas, in order to give us an insight in your line of thought, and help us evaluate your assignment accordingly.
+2. Weather (using the OpenWeatherMap API):
+
+- Average temperature
+- Number of sunny days
+- Avg. hours of sunshine
+
+## THINGS TO IMPROVE
+
+- Type definitions for some external dependencies (rodal, useAnimation) should be improved.
+- Caching can be enabled without extra effort by enabling the service worker. I decided not to do this for this assignment.
+- More data could be added to help Jamie make his decision.
+- If the app was to grow and become more complex, a state management library like Redux or Recoil.js could be used.
+- Unit tests can be added.

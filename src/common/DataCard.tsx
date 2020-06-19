@@ -25,15 +25,17 @@ function DataCard({ label, icon, value, secondaryIcon, loading, link }: Props) {
             <label className="data-card__label">{label}</label>
             <a
               href={link}
-              rel="noopener"
-              target="_blank"
               className="data-card__value"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {value}
             </a>
-            <i className="data-card__icon-wrapper data-card__icon-wrapper--secondary">
-              {secondaryIcon}
-            </i>
+            {secondaryIcon && (
+              <i className="data-card__icon-wrapper data-card__icon-wrapper--secondary">
+                {secondaryIcon}
+              </i>
+            )}
           </div>
         </>
       )}
