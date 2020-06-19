@@ -6,6 +6,7 @@ When a card is clicked, a modal opens revealing more data about the location.
 ## About the app
 
 - Simple React App using TypeScript, scss, react-spring, and axios.
+- Google Lighthouse score of 82/100/100/100.
 - Uses modern functional React with component logic extracted into custom hooks.
 - Network layer is handled with `useAxios` hooks.
 - Secure: the app is deployed using now.sh and the API key for OpenWeatherMap is stored in an encrypted remote store using environment variables
@@ -17,20 +18,22 @@ There are two main sources of information:
 
 1. Travel cost (Using the skypicker API):
 
-- The flight cost from Amsterdam/Madrid/Budapest to 3 destinations, e.g London, Paris, New York.
+- The flight cost from Amsterdam/Madrid/Budapest to 3 destinations: London, Paris & New York.
+- For simplicity, the app fetches the next 10 upcoming flights, and picks the most affordable one out of these.
+- When clicking the price, the user is redirected to the flight page.
 
-2. Weather (using the OpenWeatherMap API):
+2. Weather
 
-- Average temperature
-- Number of sunny days
-- Avg. hours of sunshine
+- Static climate data
+- Current weather (using the OpenWeatherMap API)
 
 ## Running the app
 
-1. `yarn install`
-2. `yarn start`
+1. Add the OpenWeatherMap API key in the `.env.local` file.
+2. `yarn install`
+3. `yarn start`
 
-## THINGS TO IMPROVE (if I had more time)
+## THINGS TO IMPROVE (if I had more time ;) )
 
 - Type definitions for some external dependencies (rodal, useAnimation) should be improved.
 - Caching can be enabled without extra effort by enabling the service worker. I decided not to do this for this assignment.
