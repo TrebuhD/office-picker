@@ -4,13 +4,13 @@ import DataCard from "../common/DataCard";
 import { Location } from "../types/common";
 import DetailViewSection from "./DetailViewSection";
 import useLocationClimateSection from "./useLocationClimateSection";
-import { ReactComponent as TempIcon } from "../assets/temp.svg";
-import { ReactComponent as HumidityIcon } from "../assets/humidity.svg";
-import { ReactComponent as PressureIcon } from "../assets/pressure.svg";
-import { ReactComponent as UviIcon } from "../assets/uvi.svg";
-import { ReactComponent as WeatherIcon } from "../assets/weather.svg";
-import { ReactComponent as SunIcon } from "../assets/sun.svg";
-import { ReactComponent as RainIcon } from "../assets/rain.svg";
+import { ReactComponent as TempIcon } from "../assets/icons/temp.svg";
+import { ReactComponent as HumidityIcon } from "../assets/icons/humidity.svg";
+import { ReactComponent as PressureIcon } from "../assets/icons/pressure.svg";
+import { ReactComponent as UviIcon } from "../assets/icons/uvi.svg";
+import { ReactComponent as WeatherIcon } from "../assets/icons/weather.svg";
+import { ReactComponent as SunIcon } from "../assets/icons/sun.svg";
+import { ReactComponent as RainIcon } from "../assets/icons/rain.svg";
 
 interface Props {
   location: Location;

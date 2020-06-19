@@ -58,6 +58,17 @@ function Footer() {
             www.flaticon.com
           </a>
         </p>
+        <p className="app-footer__par">
+          Photos via{" "}
+          <a
+            href="https://www.pexels.com/"
+            target="_blank"
+            title="Freepik"
+            rel="noopener noreferrer"
+          >
+            Pexels
+          </a>
+        </p>
       </div>
     </footer>
   );

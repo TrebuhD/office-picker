@@ -1,9 +1,9 @@
 import React from "react";
 
 import { LocationName } from "../constants";
-import { ReactComponent as SpainFlag } from "../assets/flag_es.svg";
-import { ReactComponent as NetherlandsFlag } from "../assets/flag_nl.svg";
-import { ReactComponent as HungaryFlag } from "../assets/flag_hg.svg";
+import { ReactComponent as SpainFlag } from "../assets/icons/flag_es.svg";
+import { ReactComponent as NetherlandsFlag } from "../assets/icons/flag_nl.svg";
+import { ReactComponent as HungaryFlag } from "../assets/icons/flag_hg.svg";
 import "./CountryFlag.scss";
 
 interface Props {

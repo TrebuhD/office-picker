@@ -5,10 +5,10 @@ import { LocationName } from "../constants";
 import { FlightDestination, Location } from "../types/common";
 import useFlightPriceCard from "./useFlightPriceCard";
 import "./FlightPriceCard.scss";
-import { ReactComponent as LondonIcon } from "../assets/london.svg";
-import { ReactComponent as NewYorkIcon } from "../assets/america.svg";
-import { ReactComponent as ParisIcon } from "../assets/france.svg";
-import { ReactComponent as PlaneIcon } from "../assets/airplane.svg";
+import { ReactComponent as LondonIcon } from "../assets/icons/london.svg";
+import { ReactComponent as NewYorkIcon } from "../assets/icons/america.svg";
+import { ReactComponent as ParisIcon } from "../assets/icons/france.svg";
+import { ReactComponent as PlaneIcon } from "../assets/icons/airplane.svg";
 
 interface Props {
   location: Location;

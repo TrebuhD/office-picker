@@ -3,7 +3,7 @@ import Footer from "./footer/Footer";
 
 import AppHeader from "./AppHeader";
 import CardList from "./cards/CardList";
-import { ReactComponent as PersonIcon } from "./assets/people.svg";
+import { ReactComponent as PersonIcon } from "./assets/icons/people.svg";
 import "./App.scss";
 
 function App() {
