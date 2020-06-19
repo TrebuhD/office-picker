@@ -7,8 +7,9 @@ The user is presented with cards representing suggested locations.
 - Simple React App using TypeScript, scss, react-spring, and axios.
 - Uses modern functional React with component logic extracted into custom hooks.
 - Network layer is handled with `useAxios` hooks.
-- Idiomatic and responsive styles using BEM, scss variables and mixins for media queries.
 - Secure: the app is deployed using now.sh and the API key for OpenWeatherMap is stored in an encrypted remote store using environment variables
+- Idiomatic and responsive styles using BEM, scss variables and mixins for media queries.
+- Automatic code formatting using prettier and a pre-commit git hook.
 
 There are two main sources of information:
 
