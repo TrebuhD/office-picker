@@ -1,11 +1,11 @@
-### This is a sample recruitment task
-
 # Office location finder
 
 The user is presented with cards representing suggested office locations.
 When a card is clicked, a modal opens revealing more data about the location.
 
 ## About the app
+
+![Screenshot](./public/screenshot.png)
 
 - Simple React App using TypeScript, scss, react-spring, and axios.
 - Google Lighthouse score of 82/100/100/100.
@@ -28,6 +28,8 @@ There are two main sources of information:
 
 - Static climate data
 - Current weather (using the OpenWeatherMap API)
+
+![animated gif](./public/animation.gif)
 
 ## Running the app
 
